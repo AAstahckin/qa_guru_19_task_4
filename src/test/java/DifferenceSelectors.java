@@ -13,6 +13,7 @@ public class DifferenceSelectors {
         open("https://qa.guru/");
         String s1 = $("div.container-std div.how-we-teach__container").getText();
         System.out.println("$(\"div.container-std div.how-we-teach__container\") -> " + s1);
+        
     }
 
     @Test
@@ -21,6 +22,7 @@ public class DifferenceSelectors {
         open("https://qa.guru/");
         String s1 = $("div.container-std").$("div.how-we-teach__container").getText();
         System.out.println("$(\"div.container-std\").$(\"div.how-we-teach__container\") -> " + s1);
+        
     }
 
 
